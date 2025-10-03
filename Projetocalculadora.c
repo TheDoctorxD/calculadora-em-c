@@ -10,7 +10,7 @@ int adic(void){
     scanf(" %f", &a);
     printf ("Digite o segundo numero: ");
     scanf(" %f", &b);
-    printf ("Resultado: %.2f + %.2f = %2.f\n", a,b,a+b);
+    printf ("Resultado: %.2f + %.2f = %.2f\n", a,b,a+b);
 
     char sn;
     int cw;
@@ -197,3 +197,4 @@ do{
 
     } while (menu != 5);
 }
+
