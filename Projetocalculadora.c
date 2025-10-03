@@ -4,13 +4,13 @@
 
 
 int adic(void){
-    int a, b;
+    float a, b;
 
     printf ("Digite o primeiro numero: ");
-    scanf(" %d", &a);
+    scanf(" %f", &a);
     printf ("Digite o segundo numero: ");
-    scanf(" %d", &b);
-    printf ("Resultado: %d + %d = %d\n", a,b,a+b);
+    scanf(" %f", &b);
+    printf ("Resultado: %.2f + %.2f = %.2f\n", a,b,a+b);
 
     char sn;
     int cw;
@@ -38,13 +38,13 @@ int adic(void){
 }
 
 int sub(void){
-    int a, b;
+    float a, b;
 
     printf ("Digite o primeiro numero: ");
-    scanf(" %d", &a);
+    scanf(" %f", &a);
     printf ("Digite o segundo numero: ");
-    scanf(" %d", &b);
-    printf ("Resultado: %d - %d = %d\n", a,b,a-b);
+    scanf(" %f", &b);
+    printf ("Resultado: %.2f - %.2f = %.2f\n", a,b,a-b);
 
     char sn;
     int cw;
@@ -72,13 +72,13 @@ int sub(void){
 }
 
 int mult(void){
-    int a, b;
+    float a, b;
 
     printf ("Digite o primeiro numero: ");
-    scanf(" %d", &a);
+    scanf(" %f", &a);
     printf ("Digite o segundo numero: ");
-    scanf(" %d", &b);
-    printf ("Resultado: %d * %d = %d\n", a,b,a*b);
+    scanf(" %f", &b);
+    printf ("Resultado: %.2f * %.2f = %.2f\n", a,b,a*b);
 
     char sn;
    int cw;
