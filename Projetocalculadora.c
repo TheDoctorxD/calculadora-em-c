@@ -161,6 +161,11 @@ do{
 
     scanf ("%d", &menu);
 
+        if(menu!= 1 && menu!= 2 && menu!= 3 && menu!= 4 && menu!= 5)
+        {
+            printf("Resposta invalida, tente novamente:\n");
+            continue;
+        }
     
         switch (menu)
         {
