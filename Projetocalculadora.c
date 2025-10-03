@@ -10,7 +10,7 @@ int adic(void){
     scanf(" %f", &a);
     printf ("Digite o segundo numero: ");
     scanf(" %f", &b);
-    printf ("Resultado: %.2f + %.2f = %.2f\n", a,b,a+b);
+    printf ("Resultado: %.2f + %.2f = %2.f\n", a,b,a+b);
 
     char sn;
     int cw;
@@ -159,13 +159,18 @@ do{
     printf("5. Sair\n");
     printf ("Opcao: ");
 
-    scanf ("%d", &menu);
-
-        if(menu!= 1 && menu!= 2 && menu!= 3 && menu!= 4 && menu!= 5)
-        {
-            printf("Resposta invalida, tente novamente:\n");
-            continue;
+    
+        if (scanf("%d", &menu) != 1) { // scanf("%d", &menu) != 1 -> se scanf ler um numero inteiro, este retornará o valor 1 (por exemplo), se ele ler um valor diferente de inteiros, ele não conseguirá ler e retornará 0.
+            printf("\nERRO: Entrada invalida! Por favor, digite um numero.\n");
+            while (getchar() != '\n'); // busca pelo próximo \n para limpar a memória;
+            menu = 0; 
         }
+
+        if (menu < 1 || menu > 5) {
+            printf("\nOpcao invalida! Escolha um numero entre 1 e 5.\n");
+            continue; // Pula o switch e volta para o início do loop
+        }
+     
     
         switch (menu)
         {
